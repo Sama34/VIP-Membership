@@ -906,7 +906,7 @@ function vipmembership_admin()
 			$form_container->output_row($lang->vipmembership_user_hours, $lang->vipmembership_user_hours_desc, $form->generate_text_box('hours', '0', array('id' => 'hours')), 'hours');
 			$form_container->output_row($lang->vipmembership_user_minutes, $lang->vipmembership_user_minutes_desc, $form->generate_text_box('minutes', '0', array('id' => 'minutes')), 'minutes');
 			$form_container->output_row($lang->vipmembership_user_seconds, $lang->vipmembership_user_seconds_desc, $form->generate_text_box('seconds', '0', array('id' => 'seconds')), 'seconds');
-			$form_container->output_row($lang->vipmembership_user_additionalgroup, $lang->vipmembership_user_additionalgroup_desc, $form->generate_yes_no_radio('additional', 0, true, "", ""), 'additional');
+			$form_container->output_row($lang->vipmembership_user_additionalgroup, $lang->vipmembership_user_additionalgroup_desc, $form->generate_yes_no_radio('additional', 0), 'additional');
 			$form_container->output_row($lang->vipmembership_user_note, $lang->vipmembership_user_note_desc, $form->generate_text_area('note', '', array('id' => 'note')), 'note');
 			$form_container->output_row($lang->vipmembership_privatemessage, $lang->vipmembership_privatemessage_desc, $form->generate_text_area('pm', $lang->vipmembership_pm_welcome, array('id' => 'pm')), 'pm');
 			
